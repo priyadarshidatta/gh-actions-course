@@ -1,0 +1,11 @@
+name: 04 - Using actions.
+on:
+  push:
+  workflow_dispatch:
+ 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
